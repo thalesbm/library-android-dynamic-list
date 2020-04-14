@@ -1,0 +1,3 @@
+rootProject.name='DynamicList'
+include ':app'
+include ':dynamiclist'
