@@ -1,1 +1,3 @@
 # android-dynamic-list
+
+Sample project showing how to implement a dynamic list...
