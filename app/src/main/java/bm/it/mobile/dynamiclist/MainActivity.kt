@@ -31,16 +31,16 @@ class MainActivity : AppCompatActivity() {
 
         for (i in 0..9) {
             val header = DynamicListModel()
-            header.header = "10/10/2018"
+            header.header = "header $i"
             header.isHeader = true
             list.add(header)
 
             for (j in 0..6) {
                 val item = DynamicListModel()
                 item.isHeader = false
-                item.header = "10/10/2018"
-                item.value = "R$ 10,00"
-                item.description = "POUPANÇA"
+                item.header = "header $i"
+                item.value = "value $j"
+                item.description = "description $j"
                 list.add(item)
             }
         }

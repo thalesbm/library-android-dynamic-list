@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/adapter_main_layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@android:color/white"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:paddingRight="16dp"
+    android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="44dp"
@@ -19,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="R$ 38.100,46" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="36dp"
@@ -29,4 +31,4 @@
         app:layout_constraintTop_toBottomOf="@+id/price"
         tools:text="CDB" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

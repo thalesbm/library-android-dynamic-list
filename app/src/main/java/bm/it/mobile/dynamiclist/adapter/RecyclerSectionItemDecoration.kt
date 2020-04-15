@@ -3,6 +3,7 @@ package bm.it.mobile.dynamiclist.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
+import androidx.appcompat.widget.AppCompatTextView
 import androidx.recyclerview.widget.RecyclerView
 import bm.it.mobile.dynamiclist.R
 import bm.it.mobile.library.dynamicList.SectionCallback
@@ -15,7 +16,7 @@ class RecyclerSectionItemDecoration(listener: SectionCallback) :
         val header: View = LayoutInflater.from(parent.context)
             .inflate(R.layout.adapter_dynamic_header, parent, false)
 
-        val textView = header.findViewById<TextView>(R.id.header)
+        val textView = header.findViewById<AppCompatTextView>(R.id.header)
         textView.apply {
             text = (parent.adapter as SectionCallback).getHeader(headerPosition)
         }
