@@ -6,6 +6,8 @@ Sample project showing how to implement a dynamic list...
 
 #### Sample
 
+![](demo/demo.gif)
+
 ------
 
 #### Instalation
