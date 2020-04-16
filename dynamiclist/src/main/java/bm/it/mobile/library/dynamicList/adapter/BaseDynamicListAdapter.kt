@@ -48,17 +48,17 @@ abstract class BaseDynamicListAdapter<T>(protected var list: List<T>) :
     }
 
     override fun getHeaderPositionForItem(itemPosition: Int): Int {
-        var itemPosition = itemPosition
+        var position = itemPosition
         var headerPosition = if (list.isEmpty()) 0 else 1
         do {
-            if (isHeader(itemPosition)) {
-                if (itemPosition != 0) {
-                    headerPosition = itemPosition
+            if (isHeader(position)) {
+                if (position != 0) {
+                    headerPosition = position
                     break
                 }
             }
-            itemPosition -= 1
-        } while (itemPosition >= 0)
+            position -= 1
+        } while (position >= 0)
         return headerPosition
     }
 
@@ -77,8 +77,4 @@ abstract class BaseDynamicListAdapter<T>(protected var list: List<T>) :
     override fun getItemCount(): Int {
         return list.size
     }
-//
-//    val itemCount: Int
-//        get() = list.size
-
 }

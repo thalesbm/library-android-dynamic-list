@@ -18,15 +18,15 @@ class ItemViewHolder(parent: ViewGroup) :
         mTextPrice = itemView.findViewById(R.id.price)
     }
 
-    override fun bind(model: DynamicListModel) {
-        super.bind(model)
+    override fun bind(item: DynamicListModel) {
+        super.bind(item)
 
         mTextDescription?.apply {
-            text = model.description
+            text = item.description
         }
 
         mTextPrice?.apply {
-            text = model.value
+            text = item.value
         }
     }
 }
