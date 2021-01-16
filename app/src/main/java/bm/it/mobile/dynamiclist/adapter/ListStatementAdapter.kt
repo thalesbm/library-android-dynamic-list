@@ -13,6 +13,10 @@ class ListStatementAdapter(list: List<DynamicListModel>) :
         return list[itemPosition].header
     }
 
+    override fun getHeaderSubTitle(itemPosition: Int): String {
+        return ""
+    }
+
     override fun isHeader(position: Int): Boolean {
         return list[position].isHeader
     }

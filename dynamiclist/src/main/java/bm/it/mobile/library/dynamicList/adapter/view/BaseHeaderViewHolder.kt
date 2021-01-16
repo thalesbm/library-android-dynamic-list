@@ -13,7 +13,7 @@ abstract class BaseHeaderViewHolder<T>(private val parent: ViewGroup, layout: In
     protected abstract fun init()
 
     open fun bind(t: T, position: Int) {
-        itemView.setAccessibilityDelegate(object : View.AccessibilityDelegate() {
+        itemView.accessibilityDelegate = object : View.AccessibilityDelegate() {
             override fun performAccessibilityAction(
                 host: View,
                 action: Int,
@@ -24,7 +24,7 @@ abstract class BaseHeaderViewHolder<T>(private val parent: ViewGroup, layout: In
                 }
                 return super.performAccessibilityAction(host, action, args)
             }
-        })
+        }
     }
 
     init {

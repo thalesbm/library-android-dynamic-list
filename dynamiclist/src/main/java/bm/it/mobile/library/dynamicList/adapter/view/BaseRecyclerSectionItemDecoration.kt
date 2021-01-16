@@ -68,7 +68,7 @@ abstract class BaseRecyclerSectionItemDecoration(@param:NonNull private val mLis
         currentHeaderPos: Int
     ): View? {
         var childInContact: View? = null
-        for (i in 0 until parent.getChildCount()) {
+        for (i in 0 until parent.childCount) {
             var heightTolerance = 0
             val child: View = parent.getChildAt(i)
             //measure height tolerance with child if child is another header
