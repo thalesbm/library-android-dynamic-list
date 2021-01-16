@@ -2,7 +2,7 @@
 
 ------
 
-#### Sample
+#### Demo
 
 ![](demo/demo.gif)
 
