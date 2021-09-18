@@ -22,6 +22,6 @@ allprojects {
 ###### Step 2. Add the dependency
 ```
 dependencies {
-    implementation 'com.github.thalesbm:android-dynamic-list:1.0.2'
+    implementation 'com.github.thalesbm:library-android-dynamic-list:1.0.2'
 }
 ```
